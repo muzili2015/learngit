@@ -1,25 +1,25 @@
-<?xml version="1.0" encoding="GB2312"?>  
+<?xml version="1.0" encoding="UTF-8"?>  
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"  
     version="2.5">  
-    <!-- 区分项目名称，防止默认重名 -->    
+    <!-- 锟斤拷锟斤拷锟斤拷目锟斤拷锟狡ｏ拷锟斤拷止默锟斤拷锟斤拷锟斤拷 -->    
     <context-param>    
         <param-name>webAppRootKey</param-name>    
         <param-value>maven.example.root</param-value>    
     </context-param>    
     
-    <!-- Spring的log4j监听器 -->    
+    <!-- Spring锟斤拷log4j锟斤拷锟斤拷锟斤拷 -->    
     <listener>    
         <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>    
     </listener>    
     
-    <!-- 字符集 过滤器  -->    
+    <!-- 锟街凤拷锟斤拷 锟斤拷锟斤拷锟斤拷  -->    
     <filter>    
         <filter-name>CharacterEncodingFilter</filter-name>    
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>    
         <init-param>    
             <param-name>encoding</param-name>    
-            <param-value>GB2312</param-value>    
+            <param-value>UTF-8</param-value>    
         </init-param>    
         <init-param>    
             <param-name>forceEncoding</param-name>    
@@ -31,7 +31,7 @@
         <url-pattern>/*</url-pattern>    
     </filter-mapping>    
     
-    <!-- Spring view分发器 -->    
+    <!-- Spring view锟街凤拷锟斤拷 -->    
     <servlet>    
         <servlet-name>learn2015</servlet-name>    
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>    
@@ -45,6 +45,8 @@
         <servlet-name>learn2015</servlet-name>    
         <url-pattern>*.do</url-pattern>    
     </servlet-mapping> 
-      
+     <welcome-file-list>  
+        <welcome-file>home.do</welcome-file>  
+    </welcome-file-list> 
   
 </web-app>  
