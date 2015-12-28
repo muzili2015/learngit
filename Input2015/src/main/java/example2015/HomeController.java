@@ -1,7 +1,4 @@
 package example2015;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-
 import org.springframework.stereotype.Controller;    
 import org.springframework.ui.Model;    
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,5 +11,4 @@ public class HomeController {
         ModelAndView mav = new ModelAndView("home");  
         return mav;  
     }  
-	 
 }

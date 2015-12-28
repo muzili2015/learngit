@@ -45,8 +45,8 @@
         <servlet-name>learn2015</servlet-name>    
         <url-pattern>*.do</url-pattern>    
     </servlet-mapping> 
-     <welcome-file-list>  
+    <welcome-file-list>  
         <welcome-file>home.do</welcome-file>  
-    </welcome-file-list> 
+    </welcome-file-list>  
   
 </web-app>  
